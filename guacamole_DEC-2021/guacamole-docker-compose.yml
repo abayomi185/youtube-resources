@@ -1,0 +1,11 @@
+version: "2"
+services:
+  guacamole:
+    image: maxwaldorf/guacamole:latest
+    container_name: guacamole
+    volumes:
+      - postgres:/config
+    ports:
+      - 8080:8080
+    environment:
+      - EXTENSIONS=auth-totp
