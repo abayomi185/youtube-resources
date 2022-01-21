@@ -13,7 +13,7 @@ xz -dv hiveos-0.6-212-stable@211201.img.xz
 ```
 
 ### Refer to YouTube video to set up VM:
-[![Watch the video](https://img.youtube.com/vi/F7Loqq0v08s/default.jpg)](https://youtu.be/F7Loqq0v08s)
+[![Watch the video](https://img.youtube.com/vi/OHiQqJcrjdk/default.jpg)](https://youtu.be/OHiQqJcrjdk)
 
 ### Import image to VM config: 
 ```bash
