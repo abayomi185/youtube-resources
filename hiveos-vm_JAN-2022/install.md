@@ -1,14 +1,25 @@
-### Install: 
-https://hiveos.farm/install/
+# Install Guide for HiveOS Proxmox VM
+> VM can also be installed in virt-manager (libvirt) too but with a different install process
 
-### Extract:
-```
+### Download HiveOS image: 
+[hiveos.farm/install](https://hiveos.farm/install/)
+
+### Extract image:
+```bash
+xz -dv <hiveos image file ending in .xz>
+
+example:
 xz -dv hiveos-0.6-212-stable@211201.img.xz
 ```
 
-### Import: 
-```
+### Refer to YouTube video to set up VM:
+[https://youtu.be/F7Loqq0v08s](https://youtu.be/F7Loqq0v08s)
+
+### Import image to VM config: 
+```bash
 qm importdisk <vmid> <source> <storage> [OPTIONS]
-sudo qm importdisk 110 ./haos_ova-6.6.qcow2 local-lvm
+
+example:
+qm importdisk 110 ./haos_ova-6.6.qcow2 local-lvm
 ```
-[Options]=> --format <qcow2 | raw | vmdk>
+> [Options]=> --format <qcow2 | raw | vmdk>
